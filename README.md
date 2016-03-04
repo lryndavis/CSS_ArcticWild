@@ -15,7 +15,7 @@
 
 ### Setup
 
-* View on [Github Pages](https://github.com/lryndavis/arctic_wild.git)
+* View on [Github Pages](http://lryndavis.github.io/arctic_wild)
 * Clone repository at [Github](https://github.com/lryndavis/arctic_wild.git)
 
 ### License
