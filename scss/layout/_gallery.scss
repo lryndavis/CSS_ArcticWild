@@ -6,6 +6,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  background-color: #ccc;
 }
 
 .row {
@@ -37,6 +38,10 @@ a img {
     top: 200px;
     left: 20px;
   }
+}
+
+.caption hr {
+  width: 45px;
 }
 
 

@@ -183,7 +183,8 @@ th {
   letter-spacing: .1em;
   display: flex;
   width: 100%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #ccc; }
 
 .row {
   display: flex;
@@ -209,6 +210,9 @@ a img {
     .caption {
       top: 200px;
       left: 20px; } }
+
+.caption hr {
+  width: 45px; }
 
 .gal-image1 {
   position: relative;
@@ -446,6 +450,8 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   color: white; }
+  .main-nav li a:hover {
+    color: #dc7725; }
 
 .main-nav {
   display: flex;
@@ -483,7 +489,7 @@ img {
 
 .heading {
   flex-wrap: nowrap;
-  margin-top: 170px;
+  margin-top: 160px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -495,7 +501,8 @@ img {
       margin-top: 70px; } }
   .heading h1 {
     font-family: 'Playfair Display';
-    margin: -20px;
+    margin-top: -20px;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 7em; }
     @media (max-width: 1000px) {
@@ -515,13 +522,13 @@ img {
     align-self: center;
     margin-bottom: 10px; }
 
-hr {
+.heading hr {
   border-top: 2px solid white;
   width: 20%;
   background: white;
   margin-top: 0; }
   @media (max-width: 1000px) {
-    hr {
+    .heading hr {
       border-top: 1px solids white; } }
 
 .faux-button {
@@ -565,6 +572,7 @@ body {
   color: white; }
 
 .secondary-nav p {
+  color: #dc7725;
   text-transform: uppercase;
   margin-left: auto;
   font-size: 1em;
