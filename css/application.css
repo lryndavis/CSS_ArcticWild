@@ -179,6 +179,8 @@ th {
   padding: 0; }
 
 .container {
+  font-family: 'Fjalla One';
+  letter-spacing: .1em;
   display: flex;
   width: 100%;
   flex-wrap: wrap; }
@@ -413,11 +415,17 @@ a img {
 
 header {
   margin-top: 0;
-  background-image: url("../img/mtn-sunset.jpg");
+  font-family: 'Fjalla One';
+  letter-spacing: .1em;
+  background-image: url("../img/hero-slide1.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh; }
+
+.nav-bar img {
+  width: 50px;
+  margin-right: 10px; }
 
 .fa-bars {
   display: none; }
@@ -459,10 +467,12 @@ header {
   align-items: center; }
 
 h2 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
   text-transform: uppercase;
   margin-right: 0;
   margin-right: auto;
-  font-size: 1.8em;
+  font-size: 1.6em;
   align-self: center; }
   @media (max-width: 1075px) {
     h2 {
@@ -473,19 +483,25 @@ img {
 
 .heading {
   flex-wrap: nowrap;
-  margin-top: 150px;
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   height: 30vh;
   color: white; }
+  @media (max-width: 1000px) {
+    .heading {
+      margin-top: 70px; } }
   .heading h1 {
-    margin: 0;
-    font-size: 7.5em; }
+    font-family: 'Playfair Display';
+    margin: -20px;
+    font-weight: 700;
+    font-size: 7em; }
     @media (max-width: 1000px) {
       .heading h1 {
-        font-size: 5em; } }
+        font-size: 5em;
+        margin: 0; } }
   .heading p {
     font-size: 1.5em;
     margin: 0;
@@ -496,13 +512,14 @@ img {
   .heading img {
     height: 85px;
     width: 85px;
-    align-self: center; }
+    align-self: center;
+    margin-bottom: 10px; }
 
 hr {
   border-top: 2px solid white;
   width: 20%;
-  height: 4px;
-  background: white; }
+  background: white;
+  margin-top: 0; }
   @media (max-width: 1000px) {
     hr {
       border-top: 1px solids white; } }
@@ -520,9 +537,11 @@ hr {
       display: none; } }
 
 body {
-  background-color: #999; }
+  background-color: #111e27; }
 
 .secondary-nav {
+  font-family: 'Open Sans';
+  font-weight: 100;
   display: flex;
   width: 100%;
   height: 80px; }
