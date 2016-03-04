@@ -1,0 +1,26 @@
+////////////// GLOBAL CONFIG //////////////////
+
+//Color Variables
+
+$dark-grey: #111e27;
+$light-grey: #ccc;
+$orange: #dc7725;
+
+//Color Usage
+
+$font-color--primary: #fff;
+$background-color-primary: $dark-grey;
+$background-color-secondary: $light-grey;
+$color-accent: $orange;
+
+//Font Stack
+
+$font-url--google: '(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic|Fjalla+One|Playfair+Display+SC:400,700italic,700)';
+$font-family--primary: 'Fjalla One';
+$font-family--secondary: 'Open Sans';
+$font-family--logo: 'Playfair Display';
+
+//Font Weights
+
+$font-weight--normal: 300;
+$font-weight--bold: 700;

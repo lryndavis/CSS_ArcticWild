@@ -1,582 +1,73 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block; }
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden],
-template {
-  display: none; }
-
-a {
-  background: transparent; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b,
-strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-pre {
-  overflow: auto; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-button {
-  overflow: visible; }
-
-button,
-select {
-  text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-input {
-  line-height: normal; }
-
-*
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto; }
-
-optgroup {
-  font-weight: bold; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
-.container {
-  font-family: 'Fjalla One';
-  letter-spacing: .1em;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: #ccc; }
-
-.row {
-  display: flex;
-  width: 100%;
-  height: 450px; }
-  @media (max-width: 780px) {
-    .row {
-      flex-direction: column;
-      height: 950px; } }
-
-a img {
-  width: 70px;
-  color: white; }
-
-.caption {
-  font-size: 1.3em;
-  color: white;
-  text-transform: uppercase;
-  position: absolute;
-  top: 370px;
-  left: 20px; }
-  @media (max-width: 780px) {
-    .caption {
-      top: 200px;
-      left: 20px; } }
-
-.caption hr {
-  width: 45px; }
-
-.gal-image1 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/home-raft.jpg");
-  background-size: cover;
-  height: 450px;
-  width: 50%; }
-  @media (max-width: 780px) {
-    .gal-image1 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image1:hover {
-    cursor: pointer; }
-    .gal-image1:hover .link {
-      transform: scale(1.3); }
-
-.link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #999;
-  border-radius: 50%;
-  opacity: 0.8;
-  width: 120px;
-  height: 120px;
-  transition: all 2s; }
-  .link a {
-    text-decoration: none;
-    color: white; }
-
-.gal-image2 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/home-basecamp.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 25%; }
-  @media (max-width: 780px) {
-    .gal-image2 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image2:hover .link {
-    transform: scale(1.3); }
-  .gal-image2 .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #999;
-    border-radius: 50%;
-    padding: 30px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    transition: all 2s; }
-    .gal-image2 .link:hover {
-      transform: scale(1.3); }
-    .gal-image2 .link a {
-      text-decoration: none;
-      color: white; }
-
-.gal-image3 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/home-backpacking.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 25%; }
-  @media (max-width: 780px) {
-    .gal-image3 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image3:hover .link {
-    transform: scale(1.3); }
-  .gal-image3 .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #999;
-    border-radius: 50%;
-    padding: 30px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    transition: all 2s; }
-    .gal-image3 .link:hover {
-      transform: scale(1.3); }
-    .gal-image3 .link a {
-      text-decoration: none;
-      color: white; }
-
-.gal-image4 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/home-canoe.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 25%; }
-  @media (max-width: 780px) {
-    .gal-image4 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image4:hover .link {
-    transform: scale(1.3); }
-  .gal-image4 .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #999;
-    border-radius: 50%;
-    padding: 30px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    transition: all 2s; }
-    .gal-image4 .link:hover {
-      transform: scale(1.3); }
-    .gal-image4 .link a {
-      text-decoration: none;
-      color: white; }
-
-.gal-image5 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../img/home-photo.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 25%; }
-  @media (max-width: 780px) {
-    .gal-image5 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image5:hover .link {
-    transform: scale(1.3); }
-  .gal-image5 .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #999;
-    border-radius: 50%;
-    padding: 30px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    transition: all 2s; }
-    .gal-image5 .link:hover {
-      transform: scale(1.3); }
-    .gal-image5 .link a {
-      text-decoration: none;
-      color: white; }
-
-.gal-image6 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  background-image: url("../img/home-custom.jpg");
-  background-size: cover;
-  height: 450px; }
-  @media (max-width: 780px) {
-    .gal-image6 {
-      width: 90%;
-      height: 950px;
-      margin: 20px auto; } }
-  .gal-image6:hover .link {
-    transform: scale(1.3); }
-  .gal-image6 .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #999;
-    border-radius: 50%;
-    padding: 30px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    transition: all 2s; }
-    .gal-image6 .link:hover {
-      transform: scale(1.3); }
-    .gal-image6 .link a {
-      text-decoration: none;
-      color: white; }
-
-header {
-  margin-top: 0;
-  font-family: 'Fjalla One';
-  letter-spacing: .1em;
-  background-image: url("../img/hero-slide1.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh; }
-
-.nav-bar img {
-  width: 50px;
-  margin-right: 10px; }
-
-.fa-bars {
-  display: none; }
-  @media (max-width: 1000px) {
-    .fa-bars {
-      display: block;
-      font-size: 1.6em; } }
-
-.main-nav li {
-  list-style: none;
-  display: inline;
-  margin-right: 15px; }
-  @media (max-width: 1075px) {
-    .main-nav li {
-      font-size: .9em; } }
-
-.main-nav li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white; }
-  .main-nav li a:hover {
-    color: #dc7725; }
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  @media (max-width: 1000px) {
-    .main-nav {
-      display: none; } }
-
-.nav-bar {
-  color: #fff;
-  padding-top: 50px;
-  display: flex;
-  width: 85%;
-  margin: 0 auto;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  height: 70px;
-  align-items: center; }
-
-h2 {
-  font-family: 'Playfair Display';
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-right: 0;
-  margin-right: auto;
-  font-size: 1.6em;
-  align-self: center; }
-  @media (max-width: 1075px) {
-    h2 {
-      font-size: 1.5em; } }
-
-img {
-  align-self: center; }
-
-.heading {
-  flex-wrap: nowrap;
-  margin-top: 160px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  height: 30vh;
-  color: white; }
-  @media (max-width: 1000px) {
-    .heading {
-      margin-top: 70px; } }
-  .heading h1 {
-    font-family: 'Playfair Display';
-    margin-top: -20px;
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 7em; }
-    @media (max-width: 1000px) {
-      .heading h1 {
-        font-size: 5em;
-        margin: 0; } }
-  .heading p {
-    font-size: 1.5em;
-    margin: 0;
-    text-transform: uppercase; }
-    @media (max-width: 1000px) {
-      .heading p {
-        font-size: .9em; } }
-  .heading img {
-    height: 85px;
-    width: 85px;
-    align-self: center;
-    margin-bottom: 10px; }
-
-.heading hr {
-  border-top: 2px solid white;
-  width: 20%;
-  background: white;
-  margin-top: 0; }
-  @media (max-width: 1000px) {
-    .heading hr {
-      border-top: 1px solids white; } }
-
-.faux-button {
-  margin-top: 130px;
-  font-size: .7em;
-  color: white;
-  background-color: #dc7725;
-  padding: 20px 16px 20px 16px;
-  width: 150px;
-  align-self: center; }
-  @media (max-width: 1000px) {
-    .faux-button {
-      display: none; } }
-
-body {
-  background-color: #111e27; }
-
-.secondary-nav {
-  font-family: 'Open Sans';
-  font-weight: 100;
-  display: flex;
-  width: 100%;
-  height: 80px; }
-  @media (max-width: 1000px) {
-    .secondary-nav {
-      display: none; } }
-
-.middle-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.middle-nav li {
-  list-style: none;
-  display: inline;
-  margin-right: 15px; }
-
-.middle-nav li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white; }
-
-.secondary-nav p {
-  color: #dc7725;
-  text-transform: uppercase;
-  margin-left: auto;
-  font-size: 1em;
-  align-self: center;
-  margin-right: 35px; }
-
-/*# sourceMappingURL=application.css.map */
+/*
+Error: File to import not found or unreadable: containers.
+       Load path: /Users/lauryndavis/Desktop/week4_review/scss
+        on line 2 of scss/layout/_index.scss
+        from line 6 of scss/application.scss
+
+1: @import 'config';
+2: @import 'helpers';
+3: @import 'utilities';
+4: @import 'reset';
+5: @import 'base';
+6: @import 'layout/index';
+7: @import 'main';
+
+Backtrace:
+scss/layout/_index.scss:2
+scss/application.scss:6
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: containers.\A        Load path: /Users/lauryndavis/Desktop/week4_review/scss\A         on line 2 of scss/layout/_index.scss\A         from line 6 of scss/application.scss\A \A 1: @import 'config';\A 2: @import 'helpers';\A 3: @import 'utilities';\A 4: @import 'reset';\A 5: @import 'base';\A 6: @import 'layout/index';\A 7: @import 'main';"; }

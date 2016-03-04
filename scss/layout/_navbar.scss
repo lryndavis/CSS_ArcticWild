@@ -1,9 +1,10 @@
 //////////NAVBAR STYLING///////////
 
+//Header Element
+
 header {
+  @extend %secondary-text;
   margin-top: 0;
-  font-family: 'Fjalla One';
-  letter-spacing: .1em;
   background-image: url('../img/hero-slide1.jpg');
   background-position: center;
   background-size: cover;
@@ -11,38 +12,20 @@ header {
   height: 100vh;
 }
 
-.nav-bar img {
-  width: 50px;
-  margin-right: 10px;
+//Navbar Container
+
+.nav-bar {
+  padding-top: 50px;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 70px;
+    align-items: center;
 }
 
-.fa-bars {
-  display: none;
-
-  @media (max-width: 1000px) {
-    display: block;
-    font-size: 1.6em;
-  }
-}
-
-.main-nav li {
-  list-style: none;
-  display: inline;
-  margin-right: 15px;
-  @media (max-width: 1075px) {
-    font-size: .9em;
-  }
-}
-
-.main-nav li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  &:hover {
-    color: #dc7725;
-  }
-}
-
+//.main-nav ul
 
 .main-nav {
   display: flex;
@@ -54,23 +37,27 @@ header {
   }
 }
 
-.nav-bar {
-  color: #fff;
-  padding-top: 50px;
-  display: flex;
-  width: 85%;
-  margin: 0 auto;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  height: 70px;
-    align-items: center;
+.main-nav li {
+  @extend %links;
+  @media (max-width: 1075px) {
+    font-size: .9em;
+  }
 }
 
+.main-nav li a {
+  @extend %links;
+}
+
+//Logo elements
+
+.nav-bar img {
+  width: 50px;
+  margin-right: 10px;
+  align-self: center;
+}
 
 h2 {
-  font-family: 'Playfair Display';
-  font-weight: 700;
-  text-transform: uppercase;
+  @extend %logo-text;
   margin-right: 0;
   margin-right: auto;
   font-size: 1.6em;
@@ -81,6 +68,13 @@ h2 {
   }
 }
 
-img {
-  align-self: center;
+//Hamburger
+
+.fa-bars {
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: block;
+    font-size: 1.6em;
+  }
 }

@@ -10,23 +10,19 @@
   text-align: center;
   justify-content: center;
   height: 30vh;
-  color: white;
   @media (max-width: 1000px) {
     margin-top: 70px;
   }
   h1 {
-    font-family: 'Playfair Display';
+    @extend %logo-text;
     margin-top: -20px;
     margin-bottom: 0;
-    font-weight: 700;
     font-size: 7em;
     @media (max-width: 1000px) {
       font-size: 5em;
       margin: 0;
     }
   }
-
-
   p {
     font-size: 1.5em;
     margin: 0;
@@ -49,17 +45,17 @@
   background: white;
   margin-top: 0;
   @media (max-width: 1000px) {
-    border-top: 1px solids white;
+    border-top: 1px solid white;
   }
 }
 
 //Faux Button element
 
 .faux-button {
+  @extend %secondary-text;
   margin-top: 130px;
   font-size:  .7em;
-  color: white;
-  background-color: #dc7725;
+  background-color: $color-accent;
   padding: 20px 16px 20px 16px;
   width: 150px;
   align-self: center;
