@@ -1,5 +1,8 @@
+// ==========================================================================
+// Normalize.css Reset
+// ==========================================================================
 
-// Import if Google fonts URl is detected
+//Import Fonts
 
 @if variable-exists (font-url--google) {
   @import url($font-url--google);
