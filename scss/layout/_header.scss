@@ -12,10 +12,70 @@ header {
 li {
   list-style: none;
   display: inline;
+  margin-right: 15px;
 }
 
 li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+}
+
+.nav-bar {
+  // border: 1px solid red;
+  padding-top: 50px;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+
+ul {
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  margin-right: auto;
+  font-size: 1.8em;
+  align-self: flex-end;
+}
+
+
+
+.heading {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 30vh;
+  color: white;
+  h1 {
+    margin: 0;
+    font-size: 7.5em;
+  }
+  p {
+    font-size: 1.8em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  img {
+    height: 85px;
+    width: 85px;
+    align-self: center;
+  }
+
+}
+
+hr {
+  width: 20%;
+  height: 4px;
+  background: white;
 }
