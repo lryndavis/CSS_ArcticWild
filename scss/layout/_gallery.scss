@@ -1,8 +1,9 @@
+//////Gallery Styling /////
+
 .container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 .row {
@@ -22,6 +23,8 @@
 
 
 .gal-image1 {
+  // border: 2px solid white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +65,20 @@
     }
   }
 
+
+
+.caption {
+  font-size: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 370px;
+  left: 30px;
+}
+
+
 .gal-image2 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,6 +129,7 @@
 }
 
 .gal-image3 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,6 +178,7 @@
 }
 
 .gal-image4 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,6 +220,7 @@
 }
 
 .gal-image5 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,6 +262,7 @@
 }
 
 .gal-image6 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

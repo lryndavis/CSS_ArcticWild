@@ -193,6 +193,7 @@ th {
       height: 950px; } }
 
 .gal-image1 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,7 +225,16 @@ th {
     text-decoration: none;
     color: white; }
 
+.caption {
+  font-size: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 370px;
+  left: 30px; }
+
 .gal-image2 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,6 +269,7 @@ th {
       color: white; }
 
 .gal-image3 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +303,7 @@ th {
       color: white; }
 
 .gal-image4 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,6 +337,7 @@ th {
       color: white; }
 
 .gal-image5 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,6 +371,7 @@ th {
       color: white; }
 
 .gal-image6 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
