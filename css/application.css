@@ -450,7 +450,8 @@ img {
   align-self: center; }
 
 .heading {
-  margin-top: 100px;
+  flex-wrap: nowrap;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -460,10 +461,16 @@ img {
   .heading h1 {
     margin: 0;
     font-size: 7.5em; }
+    @media (max-width: 1000px) {
+      .heading h1 {
+        font-size: 5em; } }
   .heading p {
     font-size: 1.5em;
     margin: 0;
     text-transform: uppercase; }
+    @media (max-width: 1000px) {
+      .heading p {
+        font-size: .9em; } }
   .heading img {
     height: 85px;
     width: 85px;
@@ -474,5 +481,20 @@ hr {
   width: 20%;
   height: 4px;
   background: white; }
+  @media (max-width: 1000px) {
+    hr {
+      border-top: 1px solids white; } }
+
+.faux-button {
+  margin-top: 130px;
+  font-size: .7em;
+  color: black;
+  background-color: white;
+  padding: 20px 16px 20px 16px;
+  width: 150px;
+  align-self: center; }
+  @media (max-width: 1000px) {
+    .faux-button {
+      display: none; } }
 
 /*# sourceMappingURL=application.css.map */
