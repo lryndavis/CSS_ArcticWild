@@ -13,9 +13,9 @@
   //   flex-direction: column;
   //   height: 82vh;
   // }
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     flex-direction: column;
-    height: 82vh;
+    height: 950px;
     // flex-wrap: nowrap;
   }
 }
@@ -34,9 +34,9 @@
   //   height: 82vh;
   //   width: 100%;
   // }
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
   &:hover {
@@ -78,9 +78,9 @@
   //   margin: 0;
   //   flex-wrap: wrap;
   // }
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
 
@@ -128,9 +128,9 @@
   //   width: 50%;
   //   flex-wrap: wrap;
   // }
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
 
@@ -169,9 +169,9 @@
   background-position: center;
   height: 450px;
   width: 25%;
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
   &:hover {
@@ -210,9 +210,9 @@
   background-position: center;
   height: 450px;
   width: 25%;
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
   &:hover {
@@ -250,9 +250,9 @@
   background-image: url('../img/bearface.jpg');
   background-size: cover;
   height: 450px;
-  @media (max-width: 666px) {
+  @media (max-width: 780px) {
     width: 90%;
-    height: 82vh;
+    height: 950px;
     margin: 20px auto;
   }
   &:hover {
