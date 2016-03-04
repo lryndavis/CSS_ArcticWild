@@ -192,6 +192,18 @@ th {
       flex-direction: column;
       height: 950px; } }
 
+.caption {
+  font-size: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 370px;
+  left: 20px; }
+  @media (max-width: 780px) {
+    .caption {
+      top: 200px;
+      left: 20px; } }
+
 .gal-image1 {
   position: relative;
   display: flex;
@@ -224,14 +236,6 @@ th {
   .link a {
     text-decoration: none;
     color: white; }
-
-.caption {
-  font-size: 1.3em;
-  color: white;
-  text-transform: uppercase;
-  position: absolute;
-  top: 370px;
-  left: 30px; }
 
 .gal-image2 {
   position: relative;
