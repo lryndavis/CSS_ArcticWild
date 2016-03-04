@@ -422,18 +422,26 @@ header {
       display: block;
       font-size: 1.6em; } }
 
-li {
+.main-nav li {
   list-style: none;
   display: inline;
   margin-right: 15px; }
   @media (max-width: 1075px) {
-    li {
+    .main-nav li {
       font-size: .9em; } }
 
-li a {
+.main-nav li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white; }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 1000px) {
+    .main-nav {
+      display: none; } }
 
 .nav-bar {
   color: #fff;
@@ -445,14 +453,6 @@ li a {
   justify-content: space-between;
   height: 70px;
   align-items: center; }
-
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  @media (max-width: 1000px) {
-    ul {
-      display: none; } }
 
 h2 {
   text-transform: uppercase;
@@ -469,7 +469,7 @@ img {
 
 .heading {
   flex-wrap: nowrap;
-  margin-top: 170px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -514,5 +514,38 @@ hr {
   @media (max-width: 1000px) {
     .faux-button {
       display: none; } }
+
+body {
+  background-color: #999; }
+
+.secondary-nav {
+  display: flex;
+  width: 100%;
+  height: 70px; }
+  @media (max-width: 1000px) {
+    .secondary-nav {
+      display: none; } }
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.middle-nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px; }
+
+.middle-nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white; }
+
+.secondary-nav p {
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 1em;
+  align-self: center;
+  margin-right: 35px; }
 
 /*# sourceMappingURL=application.css.map */

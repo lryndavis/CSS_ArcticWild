@@ -20,7 +20,7 @@ header {
   }
 }
 
-li {
+.main-nav li {
   list-style: none;
   display: inline;
   margin-right: 15px;
@@ -29,10 +29,22 @@ li {
   }
 }
 
-li a {
+.main-nav li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+}
+
+
+.main-nav {
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .nav-bar {
@@ -48,16 +60,6 @@ li a {
     align-items: center;
 }
 
-ul {
-  // border: 1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
-}
 
 h2 {
   text-transform: uppercase;
@@ -82,7 +84,7 @@ img {
 
 .heading {
   flex-wrap: nowrap;
-  margin-top: 170px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;

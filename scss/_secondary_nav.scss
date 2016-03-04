@@ -1,0 +1,40 @@
+body {
+  background-color: #999;
+}
+
+
+.secondary-nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+.middle-nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.secondary-nav p {
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 1em;
+  align-self: center;
+  margin-right: 35px;
+}
