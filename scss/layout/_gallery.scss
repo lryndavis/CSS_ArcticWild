@@ -1,0 +1,283 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  // @media (max-width: 768px) {
+  //   flex-direction: column;
+  //   height: 82vh;
+  // }
+  @media (max-width: 666px) {
+    flex-direction: column;
+    height: 82vh;
+    // flex-wrap: nowrap;
+  }
+}
+
+
+.gal-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/bearface.jpg');
+  background-size: cover;
+  height: 450px;
+  width: 50%;
+  // @media (max-width: 768px) {
+  //   flex-direction: column;
+  //   height: 82vh;
+  //   width: 100%;
+  // }
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+  &:hover {
+    cursor: pointer;
+    .link {
+      transform: scale(1.3);
+      }
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    border-radius: 50%;
+    opacity: 0.8;
+    width: 120px;
+    height: 120px;
+    transition: all 2s;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+.gal-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/northern-lights.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 25%;
+  // @media (max-width: 768px) {
+  //   flex-direction: row;
+  //   height: 82vh;
+  //   width: 50%;
+  //   margin: 0;
+  //   flex-wrap: wrap;
+  // }
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+
+  &:hover {
+    .link {
+      transform: scale(1.3);
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+.gal-image3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/northern-lights.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 25%;
+  // @media (max-width: 768px) {
+  //   flex-direction: row;
+  //   margin: 0;
+  //   height: 82vh;
+  //   width: 50%;
+  //   flex-wrap: wrap;
+  // }
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+
+  &:hover {
+    .link {
+      transform: scale(1.3);
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.gal-image4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/northern-lights.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 25%;
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+  &:hover {
+    .link {
+      transform: scale(1.3);
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+.gal-image5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/northern-lights.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 25%;
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+  &:hover {
+    .link {
+      transform: scale(1.3);
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+.gal-image6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-image: url('../img/bearface.jpg');
+  background-size: cover;
+  height: 450px;
+  @media (max-width: 666px) {
+    width: 90%;
+    height: 82vh;
+    margin: 20px auto;
+  }
+  &:hover {
+    .link {
+      transform: scale(1.3);
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}

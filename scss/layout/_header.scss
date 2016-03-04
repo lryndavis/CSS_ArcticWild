@@ -1,0 +1,21 @@
+//Header Styles
+
+header {
+  margin-top: 0;
+  background-image: url('../img/snow.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
