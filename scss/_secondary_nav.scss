@@ -6,8 +6,7 @@ body {
 .secondary-nav {
   display: flex;
   width: 100%;
-  height: 70px;
-
+  height: 80px;
   @media (max-width: 1000px) {
     display: none;
   }
