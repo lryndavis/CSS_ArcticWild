@@ -1,8 +1,10 @@
-#FlexBox Layout
-##Epicodus CSS, Week 4 Code Review
-#### By Lauryn Davis
+#Arctic Wild
 
-###Description
+By Lauryn Davis
+
+3.4.2016
+
+Epicodus CSS Week 4 / Flexbox Code Review 
 
 * A recreation of Arctic Wild's site that utilizes Flexbox for layout and responsiveness
 * Created on March 4th, 2016
